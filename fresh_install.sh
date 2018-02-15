@@ -1,5 +1,3 @@
-$/bin/bash
-
 # Update and Upgrade Everything First
 sudo pacman -Sy
 sudo pacman -Syu
