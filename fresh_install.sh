@@ -12,18 +12,18 @@ sudo pacman -Syu
 #sudo systemctl enable vmtoolsd
 
 # Install Programs
-sudo pacman -S chromium firefox vim libreoffice-fresh git gimp vlc screen tmux pymol
+sudo pacman -S chromium firefox vim libreoffice-fresh git gimp krita vlc screen tmux pymol rsync unison openssh
 
 # Install Java
 sudo pacman -S jdk8-openjdk
 
 # Install R & Supporting Packages
-sudo pacman -S r
-
+sudo pacman -S r hdf5 hdf5-openmpi gcc-fortran
 
 # Install UI Elements
 sudo pacman -S arc-kde kvantum-theme-arc
 sudo pacman -S papirus-icon-theme
+pacaur -S ttf-dejavu ttf-google-fonts-typewolf
 
 # Install PacAur & Yaourt
 sudo pacman -S pacaur yaourt
