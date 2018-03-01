@@ -7,7 +7,6 @@ sudo pacman -Syu
 #sudo pacman -Sy net-tools gtkmm
 #sudo pacman -Sy open-vm-tools
 #sudo pacman -Sy xf86-video-vmware
-#sudo pacman -Sy xf86-video-vmware
 #sudo pacman -Sy xf86-input-vmmouse
 #sudo systemctl enable vmtoolsd
 
@@ -23,6 +22,7 @@ sudo systemctl mask systemd-rfkill.socket
 # Packages Specific to Macbook Pro Early 2015 Retina
 sudo pacman -S xf86-video-intel mesa-libgl libva-intel-driver libva
 sudo pacman -S xf86-input-synaptics
+sudo pacman -S vpnc networkmanager-vpnc
 
 # Install Programs
 sudo pacman -S chromium firefox vim libreoffice-fresh git gimp krita vlc screen tmux pymol rsync unison openssh
