@@ -25,7 +25,7 @@ sudo pacman -S xf86-input-synaptics
 sudo pacman -S vpnc networkmanager-vpnc
 
 # Install Programs
-sudo pacman -S chromium firefox vim libreoffice-fresh git gimp krita vlc screen tmux pymol rsync unison openssh cron
+sudo pacman -S chromium firefox vim libreoffice-fresh git gimp vlc screen tmux pymol rsync unison openssh cron
 
 # Install Java
 sudo pacman -S jdk8-openjdk
