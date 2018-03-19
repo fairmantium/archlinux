@@ -1,4 +1,4 @@
-# Update and Upgrade Everything First
+## Update and Upgrade Everything First
 sudo pacman -Sy
 sudo pacman -Syu
 
@@ -11,18 +11,21 @@ sudo pacman -Syu
 #sudo systemctl enable vmtoolsd
 
 # Packages for Laptop Install Power Management
-sudo pacman -S ethtool smartmontools
-sudo pacman -S tlp tlp-rdw
-sudo systemctl enable tlp.service
-sudo systemctl enable tlp-sleep.service
-sudo systemctl enable NetworkManager-dispatcher.service
-sudo systemctl mask systemd-rfkill.service
-sudo systemctl mask systemd-rfkill.socket
+#sudo pacman -S ethtool smartmontools
+#sudo pacman -S tlp tlp-rdw
+#sudo systemctl enable tlp.service
+#sudo systemctl enable tlp-sleep.service
+#sudo systemctl enable NetworkManager-dispatcher.service
+#sudo systemctl mask systemd-rfkill.service
+#sudo systemctl mask systemd-rfkill.socket
 
 # Packages Specific to Macbook Pro Early 2015 Retina
-sudo pacman -S xf86-video-intel mesa-libgl libva-intel-driver libva
-sudo pacman -S xf86-input-synaptics
-sudo pacman -S vpnc networkmanager-vpnc
+#sudo pacman -S xf86-video-intel mesa-libgl libva-intel-driver libva
+#sudo pacman -S xf86-input-synaptics
+#sudo pacman -S vpnc networkmanager-vpnc
+
+# Packages for Nvidia Desktop
+sudo pacman -S nvidia nvidia-settings nvidia-utils opencl-nvidia
 
 # Install Programs
 sudo pacman -S chromium firefox vim libreoffice-fresh git gimp vlc screen tmux pymol rsync unison openssh cron
