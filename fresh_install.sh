@@ -38,7 +38,7 @@ sudo pacman -S arc-kde
 sudo pacman -S papirus-icon-theme
 
 # Install PacAur
-pacman -S pacaur
+sudo pacman -S pacaur
 
 # Install Fonts
 sudo pacman -S ttf-dejavu ttf-droid ttf-fira-mono ttf-fira-sans ttf-liberation ttf-linux-libertine-g ttf-tlwg ttf-ubuntu-font-family
