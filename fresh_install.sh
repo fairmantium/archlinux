@@ -34,7 +34,7 @@ sudo pacman -S jdk8-openjdk
 sudo pacman -S r hdf5 hdf5-openmpi gcc-fortran
 
 # Install UI Elements
-sudo pacman -S arc-kde kvantum-theme-arc
+sudo pacman -S arc-kde
 sudo pacman -S papirus-icon-theme
 
 # Install PacAur
