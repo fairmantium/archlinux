@@ -1,4 +1,4 @@
-# Update and Upgrade Everything First
+## Update and Upgrade Everything First
 sudo pacman -Sy
 sudo pacman -Syu
 
@@ -11,18 +11,21 @@ sudo pacman -Syu
 #sudo systemctl enable vmtoolsd
 
 # Packages for Laptop Install Power Management
-sudo pacman -S ethtool smartmontools
-sudo pacman -S tlp tlp-rdw
-sudo systemctl enable tlp.service
-sudo systemctl enable tlp-sleep.service
-sudo systemctl enable NetworkManager-dispatcher.service
-sudo systemctl mask systemd-rfkill.service
-sudo systemctl mask systemd-rfkill.socket
+#sudo pacman -S ethtool smartmontools
+#sudo pacman -S tlp tlp-rdw
+#sudo systemctl enable tlp.service
+#sudo systemctl enable tlp-sleep.service
+#sudo systemctl enable NetworkManager-dispatcher.service
+#sudo systemctl mask systemd-rfkill.service
+#sudo systemctl mask systemd-rfkill.socket
 
 # Packages Specific to Macbook Pro Early 2015 Retina
-sudo pacman -S xf86-video-intel mesa-libgl libva-intel-driver libva
-sudo pacman -S xf86-input-synaptics
-sudo pacman -S vpnc networkmanager-vpnc
+#sudo pacman -S xf86-video-intel mesa-libgl libva-intel-driver libva
+#sudo pacman -S xf86-input-synaptics
+#sudo pacman -S vpnc networkmanager-vpnc
+
+# Packages for Nvidia Desktop
+sudo pacman -S nvidia nvidia-settings nvidia-utils opencl-nvidia
 
 # Install Programs
 sudo pacman -S chromium firefox vim libreoffice-fresh git gimp vlc screen tmux pymol rsync unison openssh cron
@@ -34,15 +37,15 @@ sudo pacman -S jdk8-openjdk
 sudo pacman -S r hdf5 hdf5-openmpi gcc-fortran
 
 # Install UI Elements
-sudo pacman -S arc-kde kvantum-theme-arc
+sudo pacman -S arc-kde
 sudo pacman -S papirus-icon-theme
 
 # Install PacAur
-pacman -S pacaur
+sudo pacman -S pacaur
 
 # Install Fonts
 sudo pacman -S ttf-dejavu ttf-droid ttf-fira-mono ttf-fira-sans ttf-liberation ttf-linux-libertine-g ttf-tlwg ttf-ubuntu-font-family
-pacaur -S ttf-dejavu ttf-google-fonts-typewolf ttf-noto
+pacaur -S ttf-dejavu ttf-google-fonts-typewolf
 
 # Install Programming IDEs
 pacaur -S visual-studio-code-bin
