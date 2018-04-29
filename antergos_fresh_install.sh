@@ -4,7 +4,7 @@ sudo pacman -Syu
 
 # Optional Install VMware Tools
 # Uncomment If Installing In VMWare As Guest
-#sudo pacman -Sy net-tools gtkmm
+#sudo pacman -Sy net-tools gtkmm3
 #sudo pacman -Sy open-vm-tools
 #sudo pacman -Sy xf86-video-vmware
 #sudo pacman -Sy xf86-input-vmmouse
